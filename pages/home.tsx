@@ -22,7 +22,7 @@ import Brand from '../components/Brand';
 
 const Home = () => {
   return (
-    <div>
+    <div className="min-h-screen">
       <Banner
         imageUrls={['banner1.png', 'banner2.png', 'banner3.png', 'banner4.png']}
       />
@@ -38,7 +38,6 @@ const Home = () => {
             titleSubtitleProps={FEATURED_PRODUCTS_TITLE_SUBTITLE}
             imageSrc="lateral.png"
             products={FEATURED_PRODUCTS}
-
           />
           <div className="mt-20">
             <Ad images={['ad1.png', 'ad2.png']} />
@@ -53,7 +52,6 @@ const Home = () => {
             <LatestProducts
               titleSubtitleProps={LATEST_PRODUCTS_TITLE_SUBTITLE}
               products={LATEST_PRODUCTS}
-
               imageSrc="lateral.png"
             />
           </div>
